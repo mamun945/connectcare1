@@ -167,8 +167,9 @@ const Navbar = () => {
 
                   {/* User Information */}
                   <div className="flex items-center gap-3 rounded-xl bg-emerald-50 p-3">
-                    {/* <UserAvatar /> */}
-
+                    {
+                      UserAvatar()
+                    }
                     <div className="min-w-0">
                       <h3 className="truncate text-sm font-bold text-slate-800">
                         {user?.name}
@@ -269,7 +270,7 @@ const Navbar = () => {
                 {/* User Information */}
                 <div className="flex items-center gap-3 border-b border-slate-100 pb-3">
                   {/* <UserAvatar /> */}
-
+                   {UserAvatar()}
                   <div className="min-w-0">
                     <h3 className="truncate text-sm font-bold text-slate-800">
                       {user?.name}
