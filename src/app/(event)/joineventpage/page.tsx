@@ -18,13 +18,14 @@ const user = session?.user;
       authorization: `Bearer ${token}`,
     },
   });
-
+  console.log(res, 'form joinevent page')
   const joinDatas:JoinedEvent[] = await res.json();
-  const sortedJoinDatas = joinDatas.sort(
+  const sortedJoinDatas = joinDatas?.sort(
     (a, b) =>
       new Date(a.eventDate ?? "").getTime() -
       new Date(b.eventDate ?? "").getTime()
   );
+
 
   return (
     <div className="container mx-auto px-4 py-10">
