@@ -152,7 +152,9 @@ const Navbar = () => {
                   render={
                     <button className="flex items-center gap-2 rounded-full border border-slate-200 bg-white p-1.5 pr-3 transition hover:border-emerald-300 hover:bg-emerald-50">
                       {/* <UserAvatar /> */}
-
+                      {
+                        UserAvatar()
+                      }
                       <span className="max-w-28 truncate text-sm font-semibold text-slate-700">
                         {user?.name}
                       </span>
@@ -270,7 +272,7 @@ const Navbar = () => {
                 {/* User Information */}
                 <div className="flex items-center gap-3 border-b border-slate-100 pb-3">
                   {/* <UserAvatar /> */}
-                   {UserAvatar()}
+                  {UserAvatar()}
                   <div className="min-w-0">
                     <h3 className="truncate text-sm font-bold text-slate-800">
                       {user?.name}
